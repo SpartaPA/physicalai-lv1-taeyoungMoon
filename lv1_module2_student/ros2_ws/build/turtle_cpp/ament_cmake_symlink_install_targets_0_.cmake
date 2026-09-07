@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/pa9/physicalai-lv1-assignments/lv1_module2_student/ros2_ws/build/turtle_cpp/distance_publisher" "/home/pa9/physicalai-lv1-assignments/lv1_module2_student/ros2_ws/build/turtle_cpp/distance_subscriber" "TARGETS" "distance_publisher" "distance_subscriber" "DESTINATION" "lib/turtle_cpp")

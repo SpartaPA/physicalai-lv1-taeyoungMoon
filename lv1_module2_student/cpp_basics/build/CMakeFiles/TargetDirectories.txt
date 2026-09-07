@@ -1,0 +1,3 @@
+/home/pa9/lv1_module2/cpp_basics/build/CMakeFiles/main_motor.dir
+/home/pa9/lv1_module2/cpp_basics/build/CMakeFiles/edit_cache.dir
+/home/pa9/lv1_module2/cpp_basics/build/CMakeFiles/rebuild_cache.dir

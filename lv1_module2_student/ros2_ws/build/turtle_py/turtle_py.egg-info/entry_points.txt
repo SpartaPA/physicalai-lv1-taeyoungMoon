@@ -1,0 +1,11 @@
+[console_scripts]
+builtin_service_client = turtle_py.builtin_service_client:main
+distance_warning = turtle_py.distance_warning:main
+polygon_action_server = turtle_py.polygon_action_server:main
+qos_sensor_publisher = turtle_py.qos_sensor_publisher:main
+qos_subscriber = turtle_py.qos_subscriber:main
+rotate_absolute_client = turtle_py.rotate_absolute_client:main
+square_driver = turtle_py.square_driver:main
+subscribe_pose = turtle_py.subscribe_pose:main
+waypoint_publisher = turtle_py.waypoint_publisher:main
+

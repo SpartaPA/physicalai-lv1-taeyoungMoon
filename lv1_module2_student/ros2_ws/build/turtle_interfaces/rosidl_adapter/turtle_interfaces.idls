@@ -1,0 +1,4 @@
+/home/pa9/physicalai-lv1-assignments/lv1_module2_student/ros2_ws/build/turtle_interfaces/rosidl_adapter/turtle_interfaces:msg/Waypoint.idl
+/home/pa9/physicalai-lv1-assignments/lv1_module2_student/ros2_ws/build/turtle_interfaces/rosidl_adapter/turtle_interfaces:msg/WaypointList.idl
+/home/pa9/physicalai-lv1-assignments/lv1_module2_student/ros2_ws/build/turtle_interfaces/rosidl_adapter/turtle_interfaces:srv/SetGain.idl
+/home/pa9/physicalai-lv1-assignments/lv1_module2_student/ros2_ws/build/turtle_interfaces/rosidl_adapter/turtle_interfaces:action/DrawPolygon.idl

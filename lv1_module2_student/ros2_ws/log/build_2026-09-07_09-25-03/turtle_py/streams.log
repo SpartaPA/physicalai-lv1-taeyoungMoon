@@ -1,0 +1,37 @@
+[0.323s] Invoking command in '/home/pa9/physicalai-lv1-assignments/lv1_module2_student/ros2_ws/src/turtle_py': PYTHONPATH=/home/pa9/physicalai-lv1-assignments/lv1_module2_student/ros2_ws/build/turtle_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/pa9/physicalai-lv1-assignments/lv1_module2_student/ros2_ws/install/turtle_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/turtle_py build --build-base /home/pa9/physicalai-lv1-assignments/lv1_module2_student/ros2_ws/build/turtle_py/build install --record /home/pa9/physicalai-lv1-assignments/lv1_module2_student/ros2_ws/build/turtle_py/install.log --install-scripts $base/lib/turtle_py --single-version-externally-managed install_data
+[0.418s] running egg_info
+[0.418s] creating ../../build/turtle_py/turtle_py.egg-info
+[0.418s] writing ../../build/turtle_py/turtle_py.egg-info/PKG-INFO
+[0.418s] writing dependency_links to ../../build/turtle_py/turtle_py.egg-info/dependency_links.txt
+[0.418s] writing entry points to ../../build/turtle_py/turtle_py.egg-info/entry_points.txt
+[0.418s] writing requirements to ../../build/turtle_py/turtle_py.egg-info/requires.txt
+[0.418s] writing top-level names to ../../build/turtle_py/turtle_py.egg-info/top_level.txt
+[0.418s] writing manifest file '../../build/turtle_py/turtle_py.egg-info/SOURCES.txt'
+[0.421s] reading manifest file '../../build/turtle_py/turtle_py.egg-info/SOURCES.txt'
+[0.421s] writing manifest file '../../build/turtle_py/turtle_py.egg-info/SOURCES.txt'
+[0.421s] running build
+[0.422s] running build_py
+[0.422s] creating /home/pa9/physicalai-lv1-assignments/lv1_module2_student/ros2_ws/build/turtle_py/build
+[0.422s] creating /home/pa9/physicalai-lv1-assignments/lv1_module2_student/ros2_ws/build/turtle_py/build/lib
+[0.422s] creating /home/pa9/physicalai-lv1-assignments/lv1_module2_student/ros2_ws/build/turtle_py/build/lib/turtle_py
+[0.422s] copying turtle_py/subscribe_pose.py -> /home/pa9/physicalai-lv1-assignments/lv1_module2_student/ros2_ws/build/turtle_py/build/lib/turtle_py
+[0.422s] copying turtle_py/__init__.py -> /home/pa9/physicalai-lv1-assignments/lv1_module2_student/ros2_ws/build/turtle_py/build/lib/turtle_py
+[0.422s] running install
+[0.422s] running install_lib
+[0.422s] creating /home/pa9/physicalai-lv1-assignments/lv1_module2_student/ros2_ws/install/turtle_py/lib/python3.10/site-packages/turtle_py
+[0.422s] copying /home/pa9/physicalai-lv1-assignments/lv1_module2_student/ros2_ws/build/turtle_py/build/lib/turtle_py/subscribe_pose.py -> /home/pa9/physicalai-lv1-assignments/lv1_module2_student/ros2_ws/install/turtle_py/lib/python3.10/site-packages/turtle_py
+[0.422s] copying /home/pa9/physicalai-lv1-assignments/lv1_module2_student/ros2_ws/build/turtle_py/build/lib/turtle_py/__init__.py -> /home/pa9/physicalai-lv1-assignments/lv1_module2_student/ros2_ws/install/turtle_py/lib/python3.10/site-packages/turtle_py
+[0.422s] byte-compiling /home/pa9/physicalai-lv1-assignments/lv1_module2_student/ros2_ws/install/turtle_py/lib/python3.10/site-packages/turtle_py/subscribe_pose.py to subscribe_pose.cpython-310.pyc
+[0.422s] byte-compiling /home/pa9/physicalai-lv1-assignments/lv1_module2_student/ros2_ws/install/turtle_py/lib/python3.10/site-packages/turtle_py/__init__.py to __init__.cpython-310.pyc
+[0.422s] running install_data
+[0.422s] creating /home/pa9/physicalai-lv1-assignments/lv1_module2_student/ros2_ws/install/turtle_py/share/ament_index
+[0.422s] creating /home/pa9/physicalai-lv1-assignments/lv1_module2_student/ros2_ws/install/turtle_py/share/ament_index/resource_index
+[0.422s] creating /home/pa9/physicalai-lv1-assignments/lv1_module2_student/ros2_ws/install/turtle_py/share/ament_index/resource_index/packages
+[0.422s] copying resource/turtle_py -> /home/pa9/physicalai-lv1-assignments/lv1_module2_student/ros2_ws/install/turtle_py/share/ament_index/resource_index/packages
+[0.422s] copying package.xml -> /home/pa9/physicalai-lv1-assignments/lv1_module2_student/ros2_ws/install/turtle_py/share/turtle_py
+[0.422s] running install_egg_info
+[0.422s] Copying ../../build/turtle_py/turtle_py.egg-info to /home/pa9/physicalai-lv1-assignments/lv1_module2_student/ros2_ws/install/turtle_py/lib/python3.10/site-packages/turtle_py-0.0.0-py3.10.egg-info
+[0.422s] running install_scripts
+[0.430s] Installing subscribe_pose script to /home/pa9/physicalai-lv1-assignments/lv1_module2_student/ros2_ws/install/turtle_py/lib/turtle_py
+[0.430s] writing list of installed files to '/home/pa9/physicalai-lv1-assignments/lv1_module2_student/ros2_ws/build/turtle_py/install.log'
+[0.441s] Invoked command in '/home/pa9/physicalai-lv1-assignments/lv1_module2_student/ros2_ws/src/turtle_py' returned '0': PYTHONPATH=/home/pa9/physicalai-lv1-assignments/lv1_module2_student/ros2_ws/build/turtle_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/pa9/physicalai-lv1-assignments/lv1_module2_student/ros2_ws/install/turtle_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/turtle_py build --build-base /home/pa9/physicalai-lv1-assignments/lv1_module2_student/ros2_ws/build/turtle_py/build install --record /home/pa9/physicalai-lv1-assignments/lv1_module2_student/ros2_ws/build/turtle_py/install.log --install-scripts $base/lib/turtle_py --single-version-externally-managed install_data

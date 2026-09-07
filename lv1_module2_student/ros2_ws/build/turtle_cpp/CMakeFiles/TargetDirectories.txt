@@ -1,0 +1,11 @@
+/home/pa9/physicalai-lv1-assignments/lv1_module2_student/ros2_ws/build/turtle_cpp/CMakeFiles/uninstall.dir
+/home/pa9/physicalai-lv1-assignments/lv1_module2_student/ros2_ws/build/turtle_cpp/CMakeFiles/turtle_cpp_uninstall.dir
+/home/pa9/physicalai-lv1-assignments/lv1_module2_student/ros2_ws/build/turtle_cpp/CMakeFiles/distance_publisher.dir
+/home/pa9/physicalai-lv1-assignments/lv1_module2_student/ros2_ws/build/turtle_cpp/CMakeFiles/distance_subscriber.dir
+/home/pa9/physicalai-lv1-assignments/lv1_module2_student/ros2_ws/build/turtle_cpp/CMakeFiles/test.dir
+/home/pa9/physicalai-lv1-assignments/lv1_module2_student/ros2_ws/build/turtle_cpp/CMakeFiles/edit_cache.dir
+/home/pa9/physicalai-lv1-assignments/lv1_module2_student/ros2_ws/build/turtle_cpp/CMakeFiles/rebuild_cache.dir
+/home/pa9/physicalai-lv1-assignments/lv1_module2_student/ros2_ws/build/turtle_cpp/CMakeFiles/list_install_components.dir
+/home/pa9/physicalai-lv1-assignments/lv1_module2_student/ros2_ws/build/turtle_cpp/CMakeFiles/install.dir
+/home/pa9/physicalai-lv1-assignments/lv1_module2_student/ros2_ws/build/turtle_cpp/CMakeFiles/install/local.dir
+/home/pa9/physicalai-lv1-assignments/lv1_module2_student/ros2_ws/build/turtle_cpp/CMakeFiles/install/strip.dir

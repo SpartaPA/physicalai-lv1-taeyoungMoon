@@ -1,0 +1,54 @@
+[0.006s] Invoking command in '/home/pa9/physicalai-lv1-assignments/lv1_module2_student/ros2_ws/build/turtle_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pa9/physicalai-lv1-assignments/lv1_module2_student/ros2_ws/install/turtle_py:/home/pa9/ros2_ws/install/turtlebot3_teleop:/home/pa9/ros2_ws/install/turtlebot3_example:/home/pa9/ros2_ws/install/demo_py_pkg:/opt/ros/humble /usr/bin/cmake /home/pa9/physicalai-lv1-assignments/lv1_module2_student/ros2_ws/src/turtle_cpp -DCMAKE_INSTALL_PREFIX=/home/pa9/physicalai-lv1-assignments/lv1_module2_student/ros2_ws/install/turtle_cpp
+[0.088s] -- The C compiler identification is GNU 11.4.0
+[0.142s] -- The CXX compiler identification is GNU 11.4.0
+[0.152s] -- Detecting C compiler ABI info
+[0.205s] -- Detecting C compiler ABI info - done
+[0.205s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.211s] -- Detecting C compile features
+[0.212s] -- Detecting C compile features - done
+[0.217s] -- Detecting CXX compiler ABI info
+[0.264s] -- Detecting CXX compiler ABI info - done
+[0.266s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.266s] -- Detecting CXX compile features
+[0.267s] -- Detecting CXX compile features - done
+[0.342s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.426s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.491s] -- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+[0.524s] -- Found rosidl_generator_c: 3.1.9 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.527s] -- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.534s] -- Found rosidl_generator_cpp: 3.1.9 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.543s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.554s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.585s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.587s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.650s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.666s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.685s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.693s] -- Looking for pthread.h
+[0.735s] -- Looking for pthread.h - found
+[0.735s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.778s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.778s] -- Found Threads: TRUE  
+[0.816s] -- Found turtlesim: 1.4.3 (/opt/ros/humble/share/turtlesim/cmake)
+[0.842s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.887s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.887s] -- Configured cppcheck include dirs: 
+[0.887s] -- Configured cppcheck exclude dirs and/or files: 
+[0.888s] -- Added test 'lint_cmake' to check CMake code style
+[0.888s] -- Added test 'uncrustify' to check C / C++ code style
+[0.888s] -- Configured uncrustify additional arguments: 
+[0.889s] -- Added test 'xmllint' to check XML markup files
+[0.889s] -- Configuring done
+[0.893s] -- Generating done
+[0.895s] -- Build files have been written to: /home/pa9/physicalai-lv1-assignments/lv1_module2_student/ros2_ws/build/turtle_cpp
+[0.900s] Invoked command in '/home/pa9/physicalai-lv1-assignments/lv1_module2_student/ros2_ws/build/turtle_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pa9/physicalai-lv1-assignments/lv1_module2_student/ros2_ws/install/turtle_py:/home/pa9/ros2_ws/install/turtlebot3_teleop:/home/pa9/ros2_ws/install/turtlebot3_example:/home/pa9/ros2_ws/install/demo_py_pkg:/opt/ros/humble /usr/bin/cmake /home/pa9/physicalai-lv1-assignments/lv1_module2_student/ros2_ws/src/turtle_cpp -DCMAKE_INSTALL_PREFIX=/home/pa9/physicalai-lv1-assignments/lv1_module2_student/ros2_ws/install/turtle_cpp
+[0.900s] Invoking command in '/home/pa9/physicalai-lv1-assignments/lv1_module2_student/ros2_ws/build/turtle_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pa9/physicalai-lv1-assignments/lv1_module2_student/ros2_ws/install/turtle_py:/home/pa9/ros2_ws/install/turtlebot3_teleop:/home/pa9/ros2_ws/install/turtlebot3_example:/home/pa9/ros2_ws/install/demo_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/pa9/physicalai-lv1-assignments/lv1_module2_student/ros2_ws/build/turtle_cpp -- -j24 -l24
+[0.926s] [ 50%] [32mBuilding CXX object CMakeFiles/distance_publisher.dir/src/distance_publisher.cpp.o[0m
+[0.941s] [100%] [32m[1mLinking CXX executable distance_publisher[0m
+[0.982s] /usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
+[0.982s] (.text+0x1b): undefined reference to `main'
+[0.982s] collect2: error: ld returned 1 exit status
+[0.983s] gmake[2]: *** [CMakeFiles/distance_publisher.dir/build.make:183: distance_publisher] 오류 1
+[0.983s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/distance_publisher.dir/all] 오류 2
+[0.984s] gmake: *** [Makefile:146: all] 오류 2
+[0.985s] Invoked command in '/home/pa9/physicalai-lv1-assignments/lv1_module2_student/ros2_ws/build/turtle_cpp' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pa9/physicalai-lv1-assignments/lv1_module2_student/ros2_ws/install/turtle_py:/home/pa9/ros2_ws/install/turtlebot3_teleop:/home/pa9/ros2_ws/install/turtlebot3_example:/home/pa9/ros2_ws/install/demo_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/pa9/physicalai-lv1-assignments/lv1_module2_student/ros2_ws/build/turtle_cpp -- -j24 -l24
