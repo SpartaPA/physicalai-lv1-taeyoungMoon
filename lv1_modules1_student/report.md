@@ -482,4 +482,4 @@ KERNEL=="ttyUSB*", SUBSYSTEM=="tty", ATTRS{idVendor}=="10c4", ATTRS{idProduct}==
 ### 문제 1-3-1. GitHub에 연습용 공개 저장소를 만들고 clone 한 뒤, README.md 에 배달 로봇 사양(센서 목록·주기)을 적어 첫 커밋을 push 하세요.
 
 - 저장소 URL: https://github.com/SpartaPA/physicalai-lv1-taeyoungMoon
-- PR URL:
+- PR URL: https://github.com/SpartaPA/physicalai-lv1-taeyoungMoon/pull/1
