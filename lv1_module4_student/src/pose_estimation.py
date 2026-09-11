@@ -38,7 +38,17 @@ def pca_axes(P):
     centroid : (3,) 점군 중심
     """
     # TODO: 문제 5-1
-    raise NotImplementedError("pca_axes 를 구현하세요")
+    P = np.asarray(P, float)
+    if P.ndim != 2 or P.shape[1] != 3 or len(P) < 2:
+        raise ValueError("P는 점이 2개 이상인 (N,3) 배열이어야 합니다")
+    centroid = P.mean(axis=0)
+    X = P - centroid
+    eigvals, axes = np.linalg.eigh(X.T @ X / (len(P) - 1))
+    order = np.argsort(eigvals)[::-1]
+    eigvals, axes = eigvals[order], axes[:, order]
+    if np.linalg.det(axes) < 0.0:
+        axes[:, -1] *= -1.0
+    return axes, eigvals, centroid
 
 
 def kabsch(P, Q):
@@ -56,7 +66,15 @@ def kabsch(P, Q):
     t : (3,) 병진
     """
     # TODO: 문제 5-3
-    raise NotImplementedError("kabsch 를 구현하세요")
+    P, Q = np.asarray(P, float), np.asarray(Q, float)
+    if P.shape != Q.shape or P.ndim != 2 or P.shape[1] != 3:
+        raise ValueError("P와 Q는 같은 형태의 (N,3) 배열이어야 합니다")
+    cP, cQ = P.mean(axis=0), Q.mean(axis=0)
+    U, _, Vt = np.linalg.svd((P - cP).T @ (Q - cQ))
+    V = Vt.T
+    D = np.diag([1.0, 1.0, np.sign(np.linalg.det(V @ U.T))])
+    R = V @ D @ U.T
+    return R, cQ - R @ cP
 
 
 def fit_plane_lstsq(P):
@@ -74,7 +92,17 @@ def fit_plane_lstsq(P):
     residuals : (N,) 각 점의 부호 있는 평면까지의 거리 n . p + d
     """
     # TODO: 문제 5-5
-    raise NotImplementedError("fit_plane_lstsq 를 구현하세요")
+    P = np.asarray(P, float)
+    if P.ndim != 2 or P.shape[1] != 3:
+        raise ValueError("P는 (N,3) 배열이어야 합니다")
+    A = np.column_stack([P[:, 0], P[:, 1], np.ones(len(P))])
+    a, b, c = np.linalg.lstsq(A, P[:, 2], rcond=None)[0]
+    normal = np.array([a, b, -1.0])
+    scale = np.linalg.norm(normal)
+    normal, d = normal / scale, c / scale
+    if normal[2] < 0.0:
+        normal, d = -normal, -d
+    return normal, float(d), P @ normal + d
 
 
 def remove_outliers(P, residuals, k: float = 3.0):
@@ -90,4 +118,10 @@ def remove_outliers(P, residuals, k: float = 3.0):
     mask : (N,) bool — True 가 남긴 점. P 와 대응 점군에 같은 mask 를 적용해야 Kabsch 대응이 유지된다
     """
     # TODO: 문제 5-5
-    raise NotImplementedError("remove_outliers 를 구현하세요")
+    P, residuals = np.asarray(P, float), np.asarray(residuals, float)
+    if residuals.shape != (len(P),):
+        raise ValueError("residuals는 P와 같은 길이의 (N,) 배열이어야 합니다")
+    median = np.median(residuals)
+    sigma = 1.4826 * np.median(np.abs(residuals - median))
+    mask = np.abs(residuals - median) < k * sigma if sigma > 0.0 else np.isclose(residuals, median)
+    return P[mask], mask
