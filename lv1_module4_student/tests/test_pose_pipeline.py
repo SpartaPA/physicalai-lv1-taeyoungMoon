@@ -43,7 +43,15 @@ def test_camera_to_base_matches_chain(pipeline, rng):
     # TODO: (N,3) 점군을 만들어 pipeline.camera_to_base 결과가
     #       default_chain().transform("base", "camera", P) 및
     #       transform_points(T_base_link @ T_link_camera, P) 와 같은지 검사
-    raise NotImplementedError("test_camera_to_base_matches_chain 을 작성하세요")
+    P = rng.normal(size=(20, 3))
+    actual = pipeline.camera_to_base(P)
+    chain = default_chain()
+    expected_chain = chain.transform("base", "camera", P)
+    expected_matrix = transform_points(
+        chain.get("base", "link") @ chain.get("link", "camera"), P)
+    assert actual.shape == P.shape
+    assert np.allclose(actual, expected_chain)
+    assert np.allclose(actual, expected_matrix)
 
 
 # --- 2. 왕복 검증 -------------------------------------------------------------
@@ -51,7 +59,10 @@ def test_camera_to_base_matches_chain(pipeline, rng):
 def test_roundtrip_restores_points(pipeline, rng):
     # TODO: P_cam -> camera_to_base -> base_to_camera 가 P_cam 과 같은지 (allclose) 검사
     #       (3,) 단일 점과 (N,3) 점군 둘 다 확인
-    raise NotImplementedError("test_roundtrip_restores_points 를 작성하세요")
+    point = rng.normal(size=3)
+    points = rng.normal(size=(20, 3))
+    assert np.allclose(pipeline.base_to_camera(pipeline.camera_to_base(point)), point)
+    assert np.allclose(pipeline.base_to_camera(pipeline.camera_to_base(points)), points)
 
 
 # --- 여기부터는 추가 테스트 (권장) -------------------------------------------
